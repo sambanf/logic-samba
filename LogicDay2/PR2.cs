@@ -16,10 +16,12 @@ namespace LogicDay2
             {
                 for (int j = 0; j < n; j++)
                 {
+                    //segitiga atas
                     if (j > i && i + j <= n - 1)
                     {
                         Console.Write("{0}\t", Convert.ToChar(65 + i));
                     }
+                    //segitiga bawah
                     else if (j < i && i + j >= n - 1)
                     {
                         Console.Write("{0}\t", Convert.ToChar(65 + n - 1 - i));

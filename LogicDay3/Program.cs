@@ -6,84 +6,52 @@ using System.Threading.Tasks;
 
 namespace LogicDay3
 {
-    class Program
-    { 
-        public static int Tribonacci(int term)
+    public class Program
+    {
+        public Program()
         {
-            int a = 1;
-            int b = 1;
-            int c = 1;
-            int result = 0;
-
-            if (term == 0) result = a;
-            if (term == 1) result = b;
-            if (term == 2) result = c;
-
-            while (term > 2)
+            string jawab = "y";
+            while (jawab != "t")
             {
-                result = a + b + c;
-                a = b;
-                b = c;
-                c = result;
-                term--;
+                Console.WriteLine("Pilih soal : ");
+                int soal = int.Parse(Console.ReadLine());
+                Console.WriteLine("Masukan nilai n : ");
+                int n = int.Parse(Console.ReadLine());
+                switch (soal)
+                {
+                    case 5:
+                        Soal5 s5 = new Soal5(n);
+                        break;
+                    case 7:
+                        Soal7 s7 = new Soal7(n);
+                        break;
+                    case 8:
+                        Soal8 s8 = new Soal8(n);
+                        break;
+                    case 10:
+                        Soal10 s10 = new Soal10(n);
+                        break;
+                    case 11:
+                        PR1 pr1 = new PR1(n);
+                        break;
+                    case 12:
+                        PR2 pr2 = new PR2(n);
+                        break;
+                    case 13:
+                        PR3 pr3 = new PR3(n);
+                        break;
+                    default:
+                        Console.WriteLine("Soal belum tersedia");
+                        break;
+                }
+                Console.WriteLine("Ingin melanjutkan Logic Day3?? (y/t)");
+                jawab = Console.ReadLine();
+                Console.Clear();
             }
-
-            return result;
-        }
-
-        public static int Fibonacci(int n)
-        {
-            int a = 1;
-            int b = 1;
-            // In N steps compute Fibonacci sequence iteratively.
-            for (int i = 0; i < n; i++)
-            {
-                int temp = a;
-                a = b;
-                b = temp + b;
-            }
-            return a;
         }
         
         static void Main(string[] args)
         {
-            const int n = 15;
-            int[] fibo = new int[n];
-            for (int i = 0; i < fibo.Length; i++)
-            {
-                fibo[i] = Tribonacci(i);
-                Console.WriteLine(fibo[i]);
-            }
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    if (i == j)
-                    {
-                        Console.Write(Fibonacci(i)+"\t");
-                    }
-                    else if (i + j == n - 1)
-                    {
-                        Console.Write(Fibonacci(i) + "\t");
-                    }
-                    else if (j > i && i + j <= n - 1)
-                    {
-                        Console.Write(Tribonacci(i) + "\t");
-                    }
-                    else if (j < i && i + j >= n - 1)
-                    {
-                        Console.Write(Tribonacci(n-1-i) + "\t");
-                    }
-                    else
-                    {
-                        Console.Write("\t");
-                    }
-                }
-
-                Console.WriteLine("\n");
-            }
-            Console.ReadLine();
             
         }
     }

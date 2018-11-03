@@ -58,6 +58,10 @@
       <Project>{92a1c0f7-f962-43ea-b0d5-1351861ee912}</Project>
       <Name>LogicDay2</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LogicDay3\LogicDay3.csproj">
+      <Project>{30add0e2-4bfc-4517-9142-86ce51ce56aa}</Project>
+      <Name>LogicDay3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

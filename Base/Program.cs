@@ -23,6 +23,9 @@ namespace Base
                     case 2:
                         LogicDay2.Program log2 = new LogicDay2.Program();
                         break;
+                    case 3:
+                        LogicDay3.Program log3 = new LogicDay3.Program();
+                        break;
                     default:
                         Console.WriteLine("Belum belum belum");
                         break;

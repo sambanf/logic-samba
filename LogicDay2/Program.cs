@@ -50,13 +50,16 @@ namespace LogicDay2
                         Soal10 s10 = new Soal10(n);
                         break;
                     case 11:
-                        Post_Test pt = new Post_Test(n);
+                        PRR1 prr = new PRR1(n);
                         break;
                     case 12:
                         PR pr = new PR(n);
                         break;
                     case 13:
                         PR2 pr2 = new PR2(n);
+                        break;
+                    case 14:
+                        PRR2 prr2 = new PRR2(n);
                         break;
                     default:
                         Console.WriteLine("Soal belum tersedia");
