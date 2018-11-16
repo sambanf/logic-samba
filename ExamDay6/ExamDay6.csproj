@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9FDB255-631F-48E6-A7CF-93556258CE57}</ProjectGuid>
+    <ProjectGuid>{59A3FDA0-45C0-45ED-BD76-02660731A278}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Util</RootNamespace>
-    <AssemblyName>Util</AssemblyName>
+    <RootNamespace>ExamDay6</RootNamespace>
+    <AssemblyName>ExamDay6</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Baselogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Soal0709.cs" />
-    <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
